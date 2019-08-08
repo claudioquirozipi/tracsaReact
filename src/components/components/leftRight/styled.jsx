@@ -32,6 +32,9 @@ export const LeftRightSC = styled.div`
     `}
     ${props => props.center && css`
         flex-direction: column-reverse;
+        @media ${MQ.md}{
+            flex-direction: column-reverse;
+        }
         div {
             
             width: 100%;

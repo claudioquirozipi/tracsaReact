@@ -1,5 +1,4 @@
 import React from 'react';
-import MetaTags from 'react-meta-tags';
 
 //Components
 import Header2 from '../components/header/header2';
@@ -30,7 +29,7 @@ function Uniply() {
             />
             <Header2 bgImg={bgImg} logo={logo}/>
             <H1Title>Correas elevadoras y transportadoras Mínimo estiramiento</H1Title>
-            <LeftRight src={img1} reverse>
+            <LeftRight src={img1} reverse alt={"beneficios-uniply-correas-transportadoras-tracsa"}>
                 <IndexText color="#357C39">
                     <h2>BENEFICIOS</h2>
                     <ul>
@@ -50,13 +49,13 @@ function Uniply() {
                 </IndexText>
             </LeftRight>
 
-            <LeftRight src={img2}  center>
+            <LeftRight src={img2}  center alt={"ficha-tecnica-uniply-correas-transportadoras-tracsa"}>
                 <IndexText color="#357C39">
                     <h2>FICHA TÉCNICA</h2>
                     <p>Un resumido detalle de las caracteristicas tecnicas del producto y sus modelos. Para más información pedir las Hojas Técnicas a nuestros Asesores.</p>
                 </IndexText>
             </LeftRight>  
-            <LeftRight src={img3} >
+            <LeftRight src={img3} alt={"aplicaciones-uniply-correas-transportadoras-tracsa"}>
                 <IndexText color="#357C39">
                     <h2>APLICACIONES</h2>
                     <ul>
@@ -73,7 +72,7 @@ function Uniply() {
                 </IndexText>
             </LeftRight>
 
-            <LeftRight src={img4}  center>
+            <LeftRight src={img4} center alt={"manual-instalacion-uniply-correas-transportadoras-tracsa"}>
                 <IndexText color="#357C39">
                     <h2>Manual de instalación</h2>
                     <p>Te mostramos como instalar y mantener correctamente UNIPLY, para evitar problemas técnicos posteriores.</p>

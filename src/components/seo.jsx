@@ -4,7 +4,7 @@ import img from '../img/quienes.png';
 
 
 function Seo(props) {
-    const {title, description, keywords} = props;
+    const {title, description} = props;
     return(
         <MetaTags> 
             {/* Title */}

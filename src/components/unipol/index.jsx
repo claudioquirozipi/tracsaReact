@@ -1,6 +1,4 @@
 import React from 'react';
-import MetaTags from 'react-meta-tags';
-
 
 //Components
 import Header2 from '../components/header/header2';
@@ -29,7 +27,7 @@ function Unipol() {
             />
             <Header2 bgImg={bgImg} logo={logo}/>
             <H1Title>Unipol cangilones de plásticos</H1Title>
-            <LeftRight src={img1}  reverse>
+            <LeftRight src={img1}  reverse alt="beneficios-unipol-cangilones-plasticos-tracsa">
                 <IndexText color="#357C39">
                     <h2>BENEFICIOS</h2>
                     <ul>
@@ -46,7 +44,7 @@ function Unipol() {
                 </IndexText>
             </LeftRight>  
 
-            <LeftRight src={img2}  center>
+            <LeftRight src={img2}  center alt="ficha-tecnica-unipol-cangilones-plasticos-tracsa">
                 <IndexText color="#357C39">
                     <h2>FICHA TÉCNICA</h2>
                     <p>Un resumido detalle de las caracteristicas tecnicas del producto y sus modelos. Para más información pedir las Hojas Técnicas a nuestros Asesores.</p>

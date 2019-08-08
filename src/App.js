@@ -33,7 +33,7 @@ class App extends React.Component {
             <Route path="/asesoria-tecnica/serply" component={Serply} />
             <Route path="/correas-transportadoras/uniply" component={Uniply} />
             <Route path="/cangilones-plasticos/unipol" component={Unipol} />
-            <Route path="/revestimiento-puliuretano/ureply" component={Ureply} />
+            <Route path="/revestimiento-poliuretano/ureply" component={Ureply} />
             <Route path="/correas-transportadoras/velta" component={Velta} />
             <Route path="/form" component={Form} />
           </Switch>

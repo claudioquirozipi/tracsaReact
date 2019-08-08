@@ -3,11 +3,13 @@ Disallow: /nogooglebot/
 
 User-agent: *
 Allow: /https://tracsa.com.ar
-Allow: /https://tracsa.com.ar/revestimiento-puliuretano/ureply
+Allow: /https://tracsa.com.ar/revestimiento-poliuretano/ureply
 Allow: /https://tracsa.com.ar/correas-transportadoras/uniply
 Allow: /https://tracsa.com.ar/cangilones-plasticos/unipol
 Allow: /https://tracsa.com.ar/asesoria-tecnica/serply
 Allow: /https://tracsa.com.ar/correas-transportadoras/velta
 Allow: /https://tracsa.com.ar/correas-transportadoras/dauer
+Allow: /https://tracsa.com.ar/form
+Allow: /https://tracsa.com.ar/blog
 
 Sitemap: http://tracsa.com.ar/sitemap.xml

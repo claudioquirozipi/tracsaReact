@@ -1,5 +1,4 @@
 import React from 'react';
-import MetaTags from 'react-meta-tags';
 
 //Components
 import Header2 from '../components/header/header2';
@@ -32,7 +31,7 @@ function Ureply() {
             />
             <Header2 bgImg={bgImg} logo={logo}/>
             <H1Title>Revestimientos anti abrasivos de poliuretano</H1Title>
-            <LeftRight src={img1}>
+            <LeftRight src={img1} alt="ureply-tracsa-revestimiento-poliuretano-img1">
                 <IndexText color="#357C39">
                     <h2>BENEFICIOS</h2>
                     <ul>
@@ -52,7 +51,7 @@ function Ureply() {
                 </IndexText>
             </LeftRight>
 
-            <LeftRight  src={img2} center>
+            <LeftRight  src={img2} center alt="ureply-tracsa-revestimiento-poliuretano-img2">
                 <IndexText color="#357C39">
                     <h2>Comparativo</h2>
                     <p>Comparamos y costeamos los tres ecenarios más frecuentes al momento de optimizar el uso de los canos en la planta. Aprovechando sus 3 giros, revistiendolo nuevo, revistiendolo usado.</p>
@@ -60,7 +59,7 @@ function Ureply() {
                 </IndexText>
             </LeftRight>
 
-            <LeftRight src={img3}>
+            <LeftRight src={img3} alt="ureply-tracsa-revestimiento-poliuretano-img3">
                 <IndexText color="#357C39">
                     <h2>APLICACIONES</h2>
                     <ul>
@@ -78,14 +77,14 @@ function Ureply() {
                 </IndexText>
             </LeftRight>
 
-            <LeftRight src={img4} center>
+            <LeftRight src={img4} center alt="ficha-tecnica-ureply-tracsa-revestimiento-poliuretano-img">
                 <IndexText color="#357C39">
                     <h2>FICHA TÉCNICA</h2>
                     <p>Un resumido detalle de las caracteristicas tecnicas del producto y sus modelos. Para más información pedir las Hojas Técnicas a nuestros Asesores.</p>        
                 </IndexText>
             </LeftRight>
 
-            <LeftRight src={img5}  center>
+            <LeftRight src={img5}  center alt="instalacion-ureply-tracsa-revestimiento-poliuretano-img">
                 <IndexText color="#357C39">
                     <h2>INSTALACIÓN</h2>
                     <p>Te mostramos como instalar correctamente UREPLY MAX, para evitar problemas técnicos posteriores.</p>

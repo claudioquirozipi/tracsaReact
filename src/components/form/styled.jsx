@@ -11,13 +11,15 @@ export const ContainerForm = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: #979797;
+        background: #F8F9FD;
         border-radius: 8px;
         padding: 20px 20px;
         width: 375px;
         h1 {
             text-align: center;
-            color: white;
+            color: #261D57;
+            font-size: 26px;
+            font-weight: 700;
         }
     }
 `;
@@ -33,14 +35,14 @@ export const InputVerEvento = styled.div`
         width: 100%;
     }
     a {
-        color: #185997;
-        border: 2px solid #185997;
-        padding: 15px 45px;
+        color: #261D57;
+        border: 3px solid #45D9D5;
+        padding: 20px 85px;
         border-radius: 40px;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 700;
         text-decoration: none;
-        margin: 15px 0 ;
+        margin: 20px 0 ;
     }
 `;
 
@@ -53,8 +55,9 @@ export const InputRadio = styled.div`
     align-items: center;
     border-radius: 8px;
     h2 {
-        font-weight: 700;
-        color: #185997;
+        font-weight: 500;
+        color: #C4C2CD;
+        font-size: 16px;
     }
     div {
         display: flex;
@@ -66,16 +69,21 @@ export const InputRadio = styled.div`
                 align-items: center;
             div {
                 margin: 0 20px 0 0 ;
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
                 border-radius: 50%;
                 box-shadow: inset 0 0 0 4px white;
-                border: 1px solid #979797;
+                border: 3px solid #dbdbdb;
             }
-            p {margin: 0;}
+            p {
+                margin: 0;
+                color: #261D57;
+                font-size: 30px;
+                font-weight: 700;
+            }
         }
         input:focus + label > div {
-            background: #357C39;
+            background: #FF4DCB;
         }
         input { 
             opacity: 0;
@@ -83,7 +91,7 @@ export const InputRadio = styled.div`
          }
     }
 `;
-export const InputButton = styled.a`
+export const InputButton = styled.input.attrs({type:"submit", value: "Recibir Entrada"})`
     background: #185997;
     color: white;
     padding: 30px 0;
@@ -94,6 +102,8 @@ export const InputButton = styled.a`
     font-weight: 700;
     font-size: 20px;
     margin: 0 0 15px;
+    border: none;
+    outline: none;
 `;
 
 export const ContainerInputs = styled.div`
@@ -106,20 +116,25 @@ export const ContainerInputs = styled.div`
         display: flex;
         flex-direction: column;
         padding: 0 40px;
-        border-bottom: 2px solid #979797;
+        border-bottom: 2px solid #F8F9FD;
         label {
             margin: 10px 0;
+            color: #261D57;
+            font-size: 16px;
+            font-weight: 500;
         }
         input {
             margin-bottom: 10px;
             border: none;
             outline: none;
-
+            color: #E9EAEB;
+            font-size: 20px;
+            font-weight: 500;
         }
-        input::-webkit-input-placeholder { color: #979797; } 
-        input:-moz-placeholder { /* Firefox 18- */ color: #979797; } 
-        input::-moz-placeholder { /* Firefox 19+ */ color: #979797; } 
-        input:-ms-input-placeholder { color: #979797; }
+        input::-webkit-input-placeholder { color: #E9EAEB; } 
+        input:-moz-placeholder { /* Firefox 18- */ color: #E9EAEB; } 
+        input::-moz-placeholder { /* Firefox 19+ */ color: #E9EAEB; } 
+        input:-ms-input-placeholder { color: #E9EAEB; }
     }
     & :nth-child(3) {border: none;}
 `;
@@ -131,8 +146,11 @@ export const Message = styled.p`
     width: 100%;
     padding: 20px 0;
     margin: 0 0 15px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
+    color: #261D57;
+    font-size: 18px;
+
 `;
 
 export const ContainerQR = styled.div`
@@ -147,11 +165,18 @@ export const ContainerQR = styled.div`
     h2, h3 {
         text-align: center;
     }
+    h2 {
+        color: #261D57;
+        font-weight: 700;
+        font-size: 26px;
+    }
     h3 {
-        color: #979797;
+        color: #6D8492;
+        font-weight: 500;
+        font-size: 16px;
     }
     img {
-        width: 50%;
+        width: 244px;
         height: auto;
     }
     article {
@@ -159,8 +184,9 @@ export const ContainerQR = styled.div`
         /* box-sizing: border-box; */
         & > h3 { text-align: left;}
         p {
-            font-weight: 700;
+            font-weight: 500;
             font-size: 20px;
+            color: #261D57;
 
         }
     }
@@ -174,4 +200,19 @@ export const ClouseSC = styled.div`
         width: 15px;
         height: 15px;
     }
+`;
+export const View1 = styled.div`
+    width: 100%;
+    display: ${props => props.visible==="true" ? "block": "none"};
+`;
+
+
+export const View2 = styled.div`
+    width: 100%;
+    display: ${props => props.visible==="true" ? "block": "none"};
+`;
+
+export const View3 = styled.div`
+    width: 100%;
+    display: ${props => props.visible==="true" ? "block": "none"};
 `;

@@ -9,11 +9,11 @@ import {
 
 
 function LeftRight(props) {
-    const {src, reverse, center} = props;
+    const {src, reverse, center, alt} = props;
     return(
         <LeftRightSC reverse={reverse} center={center}> 
             <ContainerImg>
-                <img src={src} alt=""/>
+                <img src={src} alt={alt}/>
             </ContainerImg>
             <ContainerText>
                 {props.children}

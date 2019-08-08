@@ -19,7 +19,7 @@ function Header() {
             <Nav>
                 <img src={logo} alt=""/>
                 <ul>
-                <li><a href="https://tracbras.com.br/"></a></li>
+                <li><a href="https://tracbras.com.br/"><span></span></a></li>
                     <li><Link to="/"></Link></li>
                 </ul>
             </Nav>

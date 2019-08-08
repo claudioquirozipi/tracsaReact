@@ -46,9 +46,9 @@ function Index() {
             <Header type="Index"/>
             <H1Title>Tracsa fabricación de correas elevadoras revestimientos de poliuretano</H1Title>
 
-            <LeftRight src={IndexImg1} reverse >
+            <LeftRight src={IndexImg1} reverse alt={"ureply-tracsa-revestimiento-poliuretano"} >
                 <IndexText color="#357C39" grey>
-                    <img src={logo1} alt=""/>
+                    <img src={logo1} alt="ureply"/>
                     <h2>Revestimientos anti-abrasivos de poliuretano</h2>
                     <ul>
                         <Li>Resistencia a la abrasión e impacto.</Li>
@@ -59,15 +59,15 @@ function Index() {
                     </ul>
                     <div>
                         <Link
-                            to="./revestimiento-puliuretano/ureply"
+                            to="./revestimiento-poliuretano/ureply"
                         >Ampliar</Link>
                     </div>
                 </IndexText>
             </LeftRight>
 
-            <LeftRight src={IndexImg2} >
+            <LeftRight src={IndexImg2} alt={"uniply-correas-transportadoras-tracsa"}>
                 <IndexText color="#185997" grey>
-                    <img src={logo2} alt=""/>
+                    <img src={logo2} alt="uniply"/>
                     <h2>Correas elevadoras y transportadoras.</h2>
                     <ul>
                         <Li>Mínimo estiramiento.</Li>
@@ -84,9 +84,9 @@ function Index() {
                 </IndexText>
             </LeftRight>
 
-            <LeftRight src={IndexImg3} reverse>
+            <LeftRight src={IndexImg3} reverse alt={"unipol-cangilones-plasticos-tracsa"}>
                 <IndexText color="#E4B73B" grey>
-                    <img src={logo3} alt=""/>
+                    <img src={logo3} alt="unipol"/>
                     <h2>Cangilones plásticos inyectados</h2>
                     <ul>
                         <Li>Polietileno de Alta densidad o Nylon.</Li>
@@ -103,9 +103,9 @@ function Index() {
                 </IndexText>
             </LeftRight>
 
-            <LeftRight src={IndexImg4} >
+            <LeftRight src={IndexImg4} alt={"serply-servicio-tecnico-asesoria-tracsa"}>
                  <IndexText color="#B4632C" grey>
-                     <img src={logo4} alt=""/>
+                     <img src={logo4} alt="serply"/>
                     <h2>Servicios Técnicos y Asesoramiento.</h2>
                     <p>El procedimiento que utilizamos se adecua a la tecnología de fabricación de nuestras correas. El mismo es realizado con prensas de última generación con controles precisos de temperatura y presión.</p>
                     <div>
@@ -116,9 +116,9 @@ function Index() {
                 </IndexText>
             </LeftRight>
 
-            <LeftRight src={IndexImg5} reverse>
+            <LeftRight src={IndexImg5} reverse alt={"velta-correa-goma-transportadora-tracsa"}>
                 <IndexText color="#293141" grey>
-                    <img src={logo5} alt=""/>
+                    <img src={logo5} alt="velta"/>
                     <h2>Correa de goma, transportadoras y elevadoras.</h2>
                     <ul>
                         <Li>Bajo estiramiento y alta estabilidad.</Li>
@@ -135,9 +135,9 @@ function Index() {
                 </IndexText>
             </LeftRight>
 
-            <LeftRight src={IndexImg6} >
+            <LeftRight src={IndexImg6}  alt={"dauer-correas-transportadoras-alto-rendimiento-tracsa"}>
                 <IndexText color="#357C39" grey>
-                    <img src={logo6} alt=""/>
+                    <img src={logo6} alt="dauer"/>
                     <h2>Correas de alto rendimiento.</h2>
                     <ul>
                         <Li>Extrema resistencia al desgaste.</Li>
@@ -155,7 +155,7 @@ function Index() {
                 </IndexText>
             </LeftRight>
             <BgContainer>
-                <LeftRight src={IndexImg7} reverse>
+                <LeftRight src={IndexImg7} reverse alt={"tracsa-lider-mercado-agroindustrial-img1"}>
                     <IndexTextBlue >
                         <h2>Compañia líder en el mercado agroindustrial</h2>
                         <p>Desde 1989 fabricando correas elevadoras y revestimientos de poliuretano, exportando sus productos a los principales países del mundo. Con su planta principal de 30.000 m2 en Argentina y sede en Brasil y en EEUU. Contando con una tecnología de vanguardia, un equipo de excelencia y motorizados bajo normas de calidad internacionales nos </p>
