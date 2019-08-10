@@ -64,6 +64,8 @@ function handleSubmit(e,name, email, web, phone, description) {
     })
     .then(function(docRef) {
         console.log("Document written with ID: ", docRef.id);
+        document.getElementById("formFooter").reset();
+        alert("inscrito corretamente");
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
@@ -84,7 +86,7 @@ function Form() {
 
 
     return(
-        <FormSC onSubmit={(e) =>handleSubmit(e, name, email, web, phone, description)}>
+        <FormSC id="formFooter" onSubmit={(e) =>handleSubmit(e, name, email, web, phone, description)}>
             <h4>Contáctanos</h4>
             <Input placeholder="Nombre" src={imgName} type={"Text"} required ={true} onChange={handleSetName}/>
             <Input placeholder="Email" src={imgEmail} type={"email"} required ={true} onChange={handleSetEmail}/>
