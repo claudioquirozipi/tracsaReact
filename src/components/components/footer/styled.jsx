@@ -32,6 +32,11 @@ export const Information = styled.div`
         border: 3px solid white;
         border-radius: 50%;
     }
+    h4 {
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+    }
     ul {
         margin: 0;
         padding: 0;
@@ -39,8 +44,23 @@ export const Information = styled.div`
         li {
             color: white;
             margin: 20px 0;
-            font-size: 18px;
+            font-size: 25px;
+            font-weight: 700;
             text-align: center;
+            /* position: relative; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                height: 30px;
+                /* position: absolute;
+                top: 3px;
+                left: -35px; */
+                margin-right: 15px;
+            }
+            span {
+                font-weight: 400;
+            }
         }
     }
 `;
@@ -52,37 +72,49 @@ export const FormSC = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 35px;
+    padding: 0px 70px;
     border-radius: 8px;
-    
+    width: calc(422px - 140px);
     h4 {
-        font-size: 20px;
-        font-weight: 700;
-        color: #293141;
+        font-size: 25px;
+        font-weight: 800;
+        color: #2F3640;
+        margin-top: 47.5px;
+        margin-bottom: 13.5px;
+    }
+    p {
+        color: #666666;
+        font-size: 8px;
+        margin-top: 0;
+        margin-bottom: 29px;
+        line-height: 22.5px;
     }
 `;
 
 export const InputSC = styled.div`
     border-radius: 4px;
-    border: 1px solid #185997;
-    margin: 7px 0;
-    padding: 5px 10px;
+    border: 2px solid #E6E6E6;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0px 14.5px;
     display: flex; 
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 35px;
     input, textarea {
         border: none;
         outline: none;
-        margin-left: 20px;
-        color: #7F7F7F;
+        margin-left: 11.5px;
+        color: #B3B3B3;
         width: 100%;
+        font-size: 12px;
     }
     input:invalid {
         color: #E51D2E;
     }
     img {
-        width: 15px;
+        width: 12px;
     }
 `;
 
@@ -92,14 +124,15 @@ export const ContainerButton = styled.div`
     justify-content: center;
     margin: 30px 0;
     input, a {
-        padding: 7px 40px;
+        width: 160px;
+        height: 30px;
         color: white;
         background:#293141;
-        border-radius: 40px;
+        border-radius: 4px;
         border: none;
         outline: none;
-        font-weight: 700;
-        font-size: 15px;
+        font-weight: 600;
+        font-size: 12px;
         cursor: pointer;
     }
     a {

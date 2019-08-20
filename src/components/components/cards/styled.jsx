@@ -23,6 +23,7 @@ export const CardSC = styled.div`
     align-items: center;
     box-shadow: 3px 3px 20px 3px rgba(119, 119, 119, 0.3);
     width: 270px;
+    height: 660px;
     img {
         width: 100%;
     }

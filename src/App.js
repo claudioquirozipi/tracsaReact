@@ -5,6 +5,10 @@ import { createGlobalStyle } from 'styled-components'
 //Components
 import Index from './components';
 import Blog from './components/blog';
+import Blog1 from './components/blog/blog1';
+import Blog2 from './components/blog/blog2';
+import Blog3 from './components/blog/blog3';
+import Ok from './components/ok';
 import Dauer from './components/dauer';
 import Serply from './components/serply';
 import Uniply from './components/uniply';
@@ -28,7 +32,11 @@ class App extends React.Component {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Index} />
-            <Route path="/blog" component={Blog} />
+            <Route exact path="/blog" component={Blog} />
+            <Route path="/blog/1" component={Blog1} />
+            <Route path="/blog/2" component={Blog2} />
+            <Route path="/blog/3" component={Blog3} />
+            <Route path="/ok" component={Ok} />
             <Route path="/correas-transportadoras/dauer" component={Dauer} />
             <Route path="/asesoria-tecnica/serply" component={Serply} />
             <Route path="/correas-transportadoras/uniply" component={Uniply} />

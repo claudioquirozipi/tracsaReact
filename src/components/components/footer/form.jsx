@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import firebase from 'firebase';
 
+import { createBrowserHistory } from 'history';
+
 
 
 //Assets
@@ -26,7 +28,8 @@ var firebaseConfig = {
     messagingSenderId: "409010144407",
     appId: "1:409010144407:web:e76cdcb51e858722"
 };
-   
+
+createBrowserHistory();
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
@@ -65,7 +68,7 @@ function handleSubmit(e,name, email, web, phone, description) {
     .then(function(docRef) {
         console.log("Document written with ID: ", docRef.id);
         document.getElementById("formFooter").reset();
-        alert("inscrito corretamente");
+        window.location.href="/ok";
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
@@ -88,6 +91,10 @@ function Form() {
     return(
         <FormSC id="formFooter" onSubmit={(e) =>handleSubmit(e, name, email, web, phone, description)}>
             <h4>Contáctanos</h4>
+            <p>
+                Para mantenerte al tanto de todas las novedades de nuestros servicios solo
+                debes completar este corto registro.
+            </p>
             <Input placeholder="Nombre" src={imgName} type={"Text"} required ={true} onChange={handleSetName}/>
             <Input placeholder="Email" src={imgEmail} type={"email"} required ={true} onChange={handleSetEmail}/>
             <Input placeholder="Web" src={imgWeb} type={"url"} required ={true} onChange={handleSetWeb}/>

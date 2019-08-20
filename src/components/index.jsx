@@ -10,7 +10,7 @@ import IndexText from './components/leftRight/indexText';
 import Li from './components/leftRight/li';
 import Cards from './components/cards';
 import Seo from './seo';
-
+import Slyder from './blog/components/slyder';
 //Styled-Components
 import {H1Title} from './components/leftRight/styled';
 import {
@@ -44,7 +44,7 @@ function Index() {
             />
             
             <Header type="Index"/>
-            <H1Title>Tracsa fabricación de correas elevadoras revestimientos de poliuretano</H1Title>
+            {/* <H1Title>Tracsa fabricación de correas elevadoras revestimientos de poliuretano</H1Title> */}
 
             <LeftRight src={IndexImg1} reverse alt={"ureply-tracsa-revestimiento-poliuretano"} >
                 <IndexText color="#357C39" grey>
@@ -163,6 +163,7 @@ function Index() {
                 </LeftRight>
             </BgContainer>
 
+            <Slyder/>
             <Cards/>
             <Footer />
         </>

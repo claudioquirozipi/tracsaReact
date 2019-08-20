@@ -136,7 +136,7 @@ export const IndexTextSC = styled.div`
             justify-content: center;
             align-items: center;
             font-weight: 700;
-            margin-top: 50px;
+            margin-top: 25px;
         }
     }
 `;
