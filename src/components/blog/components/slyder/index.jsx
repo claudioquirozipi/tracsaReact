@@ -13,7 +13,7 @@ import {
     Container4,
     SubTitle
 } from './styled';
-
+import {H2Title} from '../../../components/cards/styled';
 //Asest
 import d1 from '../../../../img/blog/dauer.jpeg';
 import d2 from './img/img2.jpg';
@@ -55,7 +55,7 @@ function Slyder() {
     function Button3() { cambiarValor(valorInicial[2]) }
     return(
         <>
-            <TitleSlyder>News</TitleSlyder>
+            <H2Title>News</H2Title>
             <ContainerSlyder>
                 <Container1>
                     <div>
@@ -78,11 +78,11 @@ function Slyder() {
                 </Container2>
                 <Container3>
                     <img src={d1} alt=""/>
-                    <SubTitle>Courses</SubTitle>
+                    <SubTitle>Palabras</SubTitle>
                 </Container3>
                 <Container4>
                     <img src={d5} alt=""/>
-                    <SubTitle>Awards</SubTitle>
+                    <SubTitle>Lanzamiento</SubTitle>
                 </Container4>
             </ContainerSlyder>
         </>

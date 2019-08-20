@@ -4,6 +4,7 @@ import {MQ} from '../../../config/media';
 export const FooterContainer = styled.div`
     background: #293141;
     padding: 70px 5% ;
+    box-shadow: 0px -9px 31px -19px rgba(0,0,0,0.75);
 `;
 
 export const ContainerFormText = styled.div`
@@ -24,7 +25,10 @@ export const Information = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    @media ${MQ.md} {
     width: 40%;
+    }
     & > div > img {
         width: 50px;
         height: 50px;
@@ -34,8 +38,11 @@ export const Information = styled.div`
     }
     h4 {
         color: white;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 700;
+        @media ${MQ.md} {
+            font-size: 40px;
+        }
     }
     ul {
         margin: 0;
@@ -44,13 +51,16 @@ export const Information = styled.div`
         li {
             color: white;
             margin: 20px 0;
-            font-size: 25px;
             font-weight: 700;
             text-align: center;
             /* position: relative; */
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 16px;
+            @media ${MQ.md} {
+            font-size: 25px;
+            }
             svg {
                 height: 30px;
                 /* position: absolute;
@@ -72,9 +82,14 @@ export const FormSC = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 70px;
+    padding: 0px 40px;
     border-radius: 8px;
+    box-shadow: 0px 0px 13px 6px rgba(0,0,0,0.5);
+    width: calc(350px - 80px);
+    @media ${MQ.md} {
     width: calc(422px - 140px);
+    padding: 0px 70px;
+    }
     h4 {
         font-size: 25px;
         font-weight: 800;

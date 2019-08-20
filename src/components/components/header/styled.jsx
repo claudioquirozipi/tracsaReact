@@ -11,11 +11,14 @@ export const HeaderSC = styled.div`
 	background-size: cover;
 	background-position: center bottom;
 	background-repeat: no-repeat;
-    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 60px;
+    @media ${MQ.md} {
+        margin-bottom: 250px;
+    }
 `;
 
 export const Nav = styled.div`

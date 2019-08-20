@@ -21,7 +21,7 @@ export const ContainerSlyder = styled.div`
     grid-template-rows: repeat(4 ,1fr);
     grid-gap: 30px;
     @media ${MQ.md} {
-        margin-bottom: 404px;
+        margin-bottom: 150px;
         grid-template-columns: 1fr 29.42vw 2.86vw 4.16vw 2.81vw 31.92vw 1fr;
         grid-template-rows: 6.98vw auto 47px 26.09vw 2.24vw;
         grid-gap: 0;
@@ -34,7 +34,7 @@ export const Container1 = styled.div`
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
-    background: #635FFC;
+    background: #293141;
     height: 283px;
     @media ${MQ.md} {
         height: auto;
@@ -68,7 +68,7 @@ export const ContainerSlyderButton = styled.div`
     display: flex; 
 `;
 export const ButtonSC = styled.button`
-    background: ${props => props.colorSC ? "#3A36D8": "#5652F3"};
+    background: ${props => props.colorSC ? "rgba(0,0,0,.5)": "rgba(0,0,0,.3)" };
     transition: background .5s;
     border-radius: 50%;
     margin-right: 20px;
@@ -124,7 +124,7 @@ export const Container3 = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(255, 72, 117, .5);
+        background: rgba(53, 124, 57, .5);
         content: "";
     }
 `;
@@ -144,7 +144,7 @@ export const Container4 = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(99, 95, 252, .5);
+        background: rgba(228, 183, 59,.5);;
         content: "";
     }
 `;
