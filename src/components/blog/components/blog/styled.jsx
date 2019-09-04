@@ -23,16 +23,22 @@ export const BlogsContainer = styled.div`
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
         overflow: hidden;
+        position: relative;
+        padding-bottom: 80px;
         img {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
         h2 {
-            margin: 20px 15px 5px;
+            margin: 20px 30px 5px;
+            line-height: 35px;
+            
         }
         p {
-            margin: 0 15px;
+            margin: 20px 30px;
+            line-height: 30px;
+            
         }
         a {
             margin: 15px auto;
@@ -44,19 +50,34 @@ export const BlogsContainer = styled.div`
             color: ${props => props.colorLink || "white"};
             border-radius: 4px;
             text-decoration: none;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 `;
 
 export const BlogContainer = styled.div`
-    padding: 0 8.3vw;
+    padding: 0px 8.3vw;
     margin: 0 auto 150px;
     max-width: 760px;
+    @media ${MQ.md} {
+        padding: 100px 8.3vw;
+    }
     img {
         width: 100%;
         margin: 25px auto;
     }
+    h1 {
+        font-size: 2.3em;
+        line-height: 40px;
+    }
     h2 {
-        margin: 20px 0 ;
+        margin: 40px 0 20px;
+        line-height: 40px;
+    }
+    p {
+        line-height: 35px;
     }
 `;

@@ -7,11 +7,11 @@ import {
 } from './styled';
 
 function BlogsCQ(props) {
-    const {blogs, title} = props;
+    const {blogs, title, bgLink} = props;
     return(
         <>
             <TitleBlog>{title}</TitleBlog>
-            <BlogsContainer>
+            <BlogsContainer bgLink={bgLink}>
                 {blogs.map((blog, i) => {
                     return(
                         <div key={i}>

@@ -18,7 +18,7 @@ export const ContainerSlyder = styled.div`
     margin-top: 127px;
     margin-bottom:127px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4 ,1fr);
+    grid-template-rows: auto repeat(3, 330px);
     grid-gap: 30px;
     @media ${MQ.md} {
         margin-bottom: 150px;
@@ -156,7 +156,7 @@ export const SubTitle = styled.h3`
     margin: 0;
     color: white;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     @media ${MQ.lg} {
         font-size: 71px;
         bottom: 52px;
