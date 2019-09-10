@@ -1,3 +1,4 @@
+  
 import styled, {css} from 'styled-components';
 import {MQ} from '../../../config/media';
 
@@ -11,7 +12,6 @@ export const ContainerFormText = styled.div`
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-
     @media ${MQ.md} {
         flex-direction: row;
         justify-content: center;
@@ -60,6 +60,13 @@ export const Information = styled.div`
             font-size: 16px;
             @media ${MQ.md} {
             font-size: 25px;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    font-weight:900;
+                }
             }
             svg {
                 height: 30px;

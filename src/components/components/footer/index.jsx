@@ -63,7 +63,7 @@ function Footer() {
                     <h4>Contáctanos</h4>
                     <ul>
                         <li><ImgPhone />(54-341) 456-2580</li>
-                        <li><ImgWs />(+54) 9 341 519 2019</li>
+                        <li><ImgWs /><a href="https://api.whatsapp.com/send?phone=5493415192019&text=Hola">(+54) 9 341 519 2019</a></li>
                         <li><ImgEmail/> ventas@tracsa.com.ar</li>
                         <li><span>Av. Circunvalación 3900 <br/>Rosario. Santa Fe. C.P. S-2010-IQA</span></li>
                     </ul>

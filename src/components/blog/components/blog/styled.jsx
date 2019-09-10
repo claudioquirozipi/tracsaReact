@@ -80,4 +80,7 @@ export const BlogContainer = styled.div`
     p {
         line-height: 35px;
     }
+    li {
+        line-height: 35px;
+    }
 `;

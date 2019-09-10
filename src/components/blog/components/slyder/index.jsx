@@ -71,7 +71,7 @@ function Slyder() {
                 <Container2>
                     <SlyderSC left={valor.positionX}>
 
-                        <Link to={"/blog/1"}><img src={d1} alt=""/></Link>
+                        <Link to={"/blog/dauer-correa-poliuretano-resistencia"}><img src={d1} alt=""/></Link>
                         <Link to={"/blog/2"}><img src={d3} alt=""/></Link>
                         <Link to={"/blog/3"}><img src={d2} alt=""/></Link>
                     </SlyderSC>

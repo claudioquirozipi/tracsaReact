@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import {MQ} from '../../config/media';
 
 export const ContainerForm = styled.div`
-    background: #293141;
+    background: #f1f2f6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,10 +12,13 @@ export const ContainerForm = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: #F8F9FD;
+        background: transparent;
         border-radius: 8px;
         padding: 20px 20px;
         width: 375px;
+        @media ${MQ.md} {
+            width: 700px;
+        }
         h1 {
             text-align: center;
             color: #261D57;
@@ -67,6 +71,7 @@ export const InputRadio = styled.div`
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin: 0 8px;
             div {
                 margin: 0 20px 0 0 ;
                 width: 25px;
@@ -88,6 +93,7 @@ export const InputRadio = styled.div`
         input { 
             opacity: 0;
             z-index: -10;
+            position: fixed;
          }
     }
 `;
@@ -127,14 +133,14 @@ export const ContainerInputs = styled.div`
             margin-bottom: 10px;
             border: none;
             outline: none;
-            color: #E9EAEB;
+            color: #261D57;
             font-size: 20px;
             font-weight: 500;
         }
-        input::-webkit-input-placeholder { color: #E9EAEB; } 
-        input:-moz-placeholder { /* Firefox 18- */ color: #E9EAEB; } 
-        input::-moz-placeholder { /* Firefox 19+ */ color: #E9EAEB; } 
-        input:-ms-input-placeholder { color: #E9EAEB; }
+        input::-webkit-input-placeholder { color: #C4C2CD; } 
+        input:-moz-placeholder { /* Firefox 18- */ color: #C4C2CD; } 
+        input::-moz-placeholder { /* Firefox 19+ */ color: #C4C2CD; } 
+        input:-ms-input-placeholder { color: #C4C2CD; }
     }
     & :nth-child(3) {border: none;}
 `;

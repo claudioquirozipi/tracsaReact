@@ -18,7 +18,7 @@ import {
 } from './styled';
 
 //Assets
-import imgForm from '../../img/form/city.jpg';
+import imgForm from '../../img/myEvent/img1.png';
 import imgQr from '../../img/form/qrcode.png';
 
 
@@ -80,7 +80,7 @@ function Form() {
                     <h1>Queremos invitarte<br/> a nuestro evento</h1>
                     <InputVerEvento>
                         <img src={imgForm} alt="evento"/>
-                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">Ver evento</a>
+                        <Link to="/capacitacion_tecnica_2019">Ver evento</Link>
                     </InputVerEvento>
                     <InputRadio>
                         <h2>¿Asistirá al evento?</h2>
@@ -96,15 +96,15 @@ function Form() {
                         <ContainerInputs >
                             <div>
                                 <label htmlFor="">Nombre</label>
-                                <input type="text" placeholder="Write somethin" onChange={handleName} required/>
+                                <input type="text" placeholder="Escribe tu nombre" onChange={handleName} required/>
                             </div>
                             <div>
                                 <label htmlFor="">Teléfono</label>
-                                <input type="number" placeholder="Write somethin" onChange={handlePhone} required/>
+                                <input type="number" placeholder="Escribe tu teléfono" onChange={handlePhone} required/>
                             </div>
                             <div>
                                 <label htmlFor="">Email</label>
-                                <input type="email" placeholder="Write somethin" onChange={handleEmail} required/>
+                                <input type="email" placeholder="Escribe tu email" onChange={handleEmail} required/>
                             </div>
                         </ContainerInputs>
                         <Message>Recibirá un código QR que será<br/>su estrada a este envento.</Message>
@@ -120,12 +120,12 @@ function Form() {
                         <article>
                             <h3>Lugar</h3>
                             <p>
-                                Av, cabildo 1223, Rosario, <br/>
-                                Santa Fe, Argentina (Salon <br/>
-                                metropolitano.)
+                                Av. Circunvalación 3900, <br/>
+                                Rosario, Santa Fe, <br/>
+                                Argentina. C.P. S-2010-IQA
                             </p>
                             <h3>Fecha y hora</h3>
-                            <p>12/08/19 - 08:00 a 16:00</p>
+                            <p>08/11/19 a las 09.00 am</p>
                         </article>
                     </ContainerQR>
                 </View3>

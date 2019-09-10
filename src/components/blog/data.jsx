@@ -7,7 +7,7 @@ export const data = [
         img:imgDauer1,
         title: "DAUER, MADE IN ARGENTINA", 
         text:"Se trata de una banda transportadora y elevadora. La misma fue demostrada técnicamente  en vivo en Whats`new de GEAPS 2018.", 
-        url:"/blog/1"
+        url:"/blog/dauer-correa-poliuretano-resistencia"
     },
     {
         img:imgDauer2, 

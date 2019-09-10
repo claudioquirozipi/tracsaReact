@@ -16,6 +16,7 @@ import Unipol from './components/unipol';
 import Ureply from './components/ureply';
 import Velta from './components/velta';
 import Form from './components/form';
+import MyEvent from './view/myEvent';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -33,7 +34,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Index} />
             <Route exact path="/blog" component={Blog} />
-            <Route path="/blog/1" component={Blog1} />
+            <Route path="/blog/dauer-correa-poliuretano-resistencia" component={Blog1} />
             <Route path="/blog/2" component={Blog2} />
             <Route path="/blog/3" component={Blog3} />
             <Route path="/ok" component={Ok} />
@@ -44,6 +45,7 @@ class App extends React.Component {
             <Route path="/revestimiento-poliuretano/ureply" component={Ureply} />
             <Route path="/correas-transportadoras/velta" component={Velta} />
             <Route path="/form" component={Form} />
+            <Route path="/capacitacion_tecnica_2019" component={MyEvent} />
           </Switch>
         </BrowserRouter>
       </>
