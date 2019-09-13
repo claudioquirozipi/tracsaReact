@@ -107,7 +107,7 @@ function Form() {
                                 <input type="email" placeholder="Escribe tu email" onChange={handleEmail} required/>
                             </div>
                         </ContainerInputs>
-                        <Message>Recibirá un código QR que será<br/>su estrada a este envento.</Message>
+                        <Message>Recibirá un código QR que será<br/>su entrada a este envento.</Message>
                         <InputButton/>
                     </View2>
                 </View1>
